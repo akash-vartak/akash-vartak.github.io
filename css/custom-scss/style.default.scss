@@ -1,0 +1,503 @@
+:root {
+	--primary-blue: #2b90d9;
+	--primary-blue-r: 43;
+	--primary-blue-g: 144;
+	--primary-blue-b: 217;
+	/*1cce4928 206 73*/
+	/*11a335 17 163 53*/
+	--primary-green: #09a530;
+	--primary-green-r: 9;
+	--primary-green-g: 165;
+	--primary-green-b: 48;
+	/*921cce 146 28 206;*/
+	/*a76dff 167 109 255;*/
+	--primary-purple: #a163ff;
+	--primary-purple-r: 161;
+	--primary-purple-g: 99;
+	--primary-purple-b: 255;
+	--viewport-width: 100vw;
+	
+	--linkedin: #0077b5;
+	--facebook: #4460ae;
+	--twitter: #3cf;
+	--gplus: #c21f25;
+	--instagram: #cd4378;
+	--email: #4a7f45;
+}
+
+$font-family: 'Roboto', sans-serif;
+$primary-blue: var(--primary-blue);
+$primary-green: var(--primary-green);
+$primary-purple: var(--primary-purple);
+
+@media (min-width: 1200px) {
+	h1 {
+		font-size: 70px;
+	}
+	h2 {
+		font-size: 65px;
+	}
+	h3 {
+		font-size: 60px;
+	}
+	h4 {
+		font-size: 55px;
+	}
+	h5 {
+		font-size: 50px;
+	}
+	h6 {
+		font-size: 45px;
+	}
+	
+	.heading7 {
+		font-size: 40px;
+	}
+	.header7-small {
+		font-size: 32px;
+	}
+}
+
+@media (max-width:1200px) /*and (min-width:768px)*/ {
+	h1 {
+		font-size: 48px;
+	}
+	h2 {
+		font-size: 40px;
+	}
+	h3 {
+		font-size: 35px;
+	}
+	h4 {
+		font-size: 30px;
+	}
+	h5 {
+		font-size: 26px;
+	}
+	h6 {
+		font-size: 22px;
+	}
+	
+	.heading7 {
+		font-size: 22px;
+	}
+	.header7-small {
+		font-size: 19px;
+	}
+}
+
+@mixin colorThemePickerCircle($color) {
+	border: 1px solid $color;
+	background-color: $color;	
+}
+
+@mixin sectionDefaultStyle() {
+	color: white;
+	padding-top: 50px;
+	min-width: 100%;
+}
+
+body {
+	background-color: #080808; /*efefef f9f9f9*/
+	overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-family;
+	font-weight: 700;
+	line-height: 1.3;
+}
+
+.btn-circle, .btn-circle:hover, .btn-circle:focus, .btn-circle:active, .btn-circle:visited {
+	outline: none;
+	border-radius: 50%;
+	height: 20px;
+	width: 20px;
+	margin: 0 2px 0 2px;
+}
+	
+.btn-blue {
+	@include colorThemePickerCircle($primary-blue);
+}
+
+.btn-green {
+	@include colorThemePickerCircle($primary-green);
+}
+
+.btn-purple {
+	@include colorThemePickerCircle($primary-purple);
+}
+
+.primaryText {
+	color: $primary-blue;
+}
+
+@media (max-width: 991px) {
+	.intro {
+		@include sectionDefaultStyle();
+		min-height: 50vh;
+	}
+}
+@media (min-width: 992px) {
+	.intro {
+		@include sectionDefaultStyle();
+		min-height: 90vh;
+	}
+}
+/*.intro {
+	min-height: 90vh;
+}*/
+
+.theme-color-picker {
+	padding: 5px 10px 0 0;
+	position: absolute;
+	min-width: 100%;
+}
+
+.hr-section {
+	min-width: 100%;
+	text-align: center;
+	hr {
+		max-width: 75%;
+	}
+}
+
+.experience, .projects, .skills, .research-publication {
+	@include sectionDefaultStyle();
+}
+
+@media (max-width: 510px) { /*510*/
+	.card {
+		border: 1px solid rgba(var(--primary-blue-r),var(--primary-blue-g),var(--primary-blue-b), 1);
+	}
+}
+@media (min-width: 509px) {
+	.card {
+		padding-bottom: 10px;
+	}
+}
+.card {
+	margin: 0 -15px;
+	/*padding-top: 100%;*/
+	min-height: calc(var(--viewport-width)/4.5);
+	/*border: 1px solid #aaaaaa;*/
+	transition: 0.5s;
+	position: relative;
+}
+
+/*.card:hover {
+	box-shadow: 8px 4px 8px 4px rgba(0,0,0,0.2);
+}*/
+.card:before {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  /*background-color: rgba(var(--primary-blue-r),var(--primary-blue-g),var(--primary-blue-b), 0.5);*/
+	border: 3px solid rgba(var(--primary-blue-r),var(--primary-blue-g),var(--primary-blue-b), 1);
+  z-index: -2;
+}
+.card:hover:before {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+.card:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.card-container {
+	/*position: absolute;*/
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+    padding: 15px 15px;
+	height:100%;
+}
+.cardLink, .cardLink:hover, .cardLink:link, .cardLink:visited,
+.cardLink:hover, .cardLink:focus, .cardLink:active {
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+	height: 100%;
+}
+
+.badge {
+	font-size: 13px;
+	padding: 4px 10px;
+	background-color: $primary-blue;
+}
+
+.btn-theme-based, .btn-theme-based:hover, .btn-theme-based:link,
+.btn-theme-based:visited, .btn-theme-based:focus, .btn-theme-based:active {
+	border: 1px solid $primary-blue;
+	background-color: $primary-blue;
+	color: white;
+}
+
+.contact {
+	@include sectionDefaultStyle();
+}
+
+
+p.social {
+    text-align: center;
+    margin-top: 20px
+}
+
+p.social a {
+    margin: 0 10px 0 0;
+    color: #fff;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    line-height: 40px;
+    font-size: 15px;
+    text-align: center;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    vertical-align: bottom;
+    border: solid 1px #ccc
+}
+
+p.social a i {
+    vertical-align: bottom;
+    line-height: 40px
+}
+
+p.social a.linkedin {
+    background-color: var(--linkedin);
+    border-color: var(--linkedin);
+}
+
+p.social a.facebook {
+    background-color: var(--facebook);
+    border-color: var(--facebook)
+}
+
+p.social a.gplus {
+    background-color: var(--gplus);
+    border-color: var(--gplus)
+}
+
+p.social a.twitter {
+    background-color: var(--twitter);
+    border-color: var(--twitter)
+}
+
+p.social a.instagram {
+    background-color: var(--instagram);
+    border-color: var(--instagram)
+}
+
+p.social a.email {
+    background-color: var(--email);
+    border-color: var(--email)
+}
+
+p.social a.link {
+    background-color: #871aff;
+    border-color: #871aff
+}
+
+p.social.social--outline a {
+    background: transparent
+}
+
+p.social.social--outline a.linkedin {
+    color: var(--linkedin);
+    border-color: var(--linkedin);
+}
+
+p.social.social--outline a.facebook {
+    color: var(--facebook);
+    border-color: var(--facebook)
+}
+
+p.social.social--outline a.gplus {
+    color: var(--gplus);
+    border-color: var(--gplus)
+}
+
+p.social.social--outline a.twitter {
+    color: var(--twitter);
+    border-color: var(--twitter)
+}
+
+p.social.social--outline a.instagram {
+    color: var(--instagram);
+    border-color: var(--instagram)
+}
+
+p.social.social--outline a.email {
+    color: var(--email);
+    border-color: var(--email)
+}
+
+p.social.social--outline a.link {
+    color: #871aff;
+    border-color: #871aff
+}
+
+.footer {
+	color: white;
+}
+
+
+/*Code for Skill's circular graphs*/
+
+//styling
+$borderWidth: 7px;
+$animationTime: 1.5s;
+$border-color-default: #343434;
+$border-color-fill: #ffb43e;
+$size: 150px;
+
+//Create how many steps
+$howManySteps: 10; //this needs to be even. 
+//for fun try using 20 and changine in the HTML the data-percentage to 15 or 85
+
+.progress {
+  width: $size;
+  height: $size;
+  line-height: $size;
+  background: none;
+  margin: 0 auto;
+  box-shadow: none;
+  position: relative;
+	z-index: 1;
+  &:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: $borderWidth solid $border-color-default;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  > span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+  .progress-left {
+    left: 0;
+  }
+  .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: $borderWidth;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+    border-color: var(--primary-blue);
+  }
+  .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: ($size/2);;
+    border-bottom-right-radius: ($size/2);;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+    //animation: loading-2 1.5s linear forwards 1.8s;
+  }
+  .progress-right {
+    right: 0;
+    .progress-bar {
+      left: -100%;
+      border-top-left-radius: ($size/2);;
+      border-bottom-left-radius: ($size/2);;
+      border-right: 0;
+      -webkit-transform-origin: center right;
+      transform-origin: center right;
+      //animation: loading-1 1.8s linear forwards;
+    }
+  }
+  .progress-value {
+    display: flex;
+    border-radius: 50%;
+    font-size: 36px;
+    text-align: center;
+    line-height: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    //font-family: $work-sans;
+    font-weight: 300;
+    div {
+      margin-top: 10px;
+		position: absolute;
+		z-index: 100;
+    }
+    span {
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+/* This for loop creates the    necessary css animation names 
+Due to the split circle of progress-left and progress right, we must use the animations on each side. 
+*/
+@for $i from 1 through $howManySteps {
+    $stepName: ($i*(100 / $howManySteps));
+
+    //animation only the left side if below 50%
+    @if $i <= ($howManySteps/2) { 
+        .progress[data-percentage="#{$stepName}"] {
+            .progress-right .progress-bar {
+                 animation: loading-#{$i} $animationTime linear forwards;
+            }
+            .progress-left .progress-bar {animation: 0;}
+        }
+    }
+    //animation only the right side if above 50%
+    @if $i > ($howManySteps/2)  {  
+        .progress[data-percentage="#{$stepName}"] {
+            .progress-right .progress-bar {
+                animation: loading-#{($howManySteps/2)} $animationTime linear forwards; //set the animation to longest animation
+            }
+            .progress-left .progress-bar {
+      animation: loading-#{$i - ($howManySteps/2)} $animationTime linear forwards $animationTime;
+    }
+        }
+    }
+}
+
+//animation
+@for $i from 1 through ($howManySteps/2) { 
+    $degrees: (180/($howManySteps/2));
+    $degrees: ($degrees*$i);
+    @keyframes loading-#{$i}{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate($degrees);
+            transform: rotate(#{$degrees}deg);
+    }
+    }
+}
+//additional styling
+.progress {
+        margin-bottom: 1em;
+    }
