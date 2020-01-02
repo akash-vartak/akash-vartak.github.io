@@ -1,0 +1,43 @@
+/* ------- Overlay CSS ------- */
+.overlay {
+    background-image: linear-gradient(130deg, #000000, #232323, #888888, #ffb047);
+}
+
+
+
+@media (min-width: 768px) {
+  .masthead .masthead-content {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+
+/* ------- Resume Link CSS ------- */
+.resume-link {
+    text-decoration: none;
+    color: #ffa023;
+}
+
+.resume-link:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* ------- Social Link CSS ------- */
+.social-icons ul > li > a {
+    color: #d17700;
+    background-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+    .social-icons ul > li > a {
+        transition: all 0.25s ease-in-out;
+    }
+    
+    .social-icons ul > li > a:hover {
+        color: #ffffff;
+        background-color: #ffa023;
+    }
+}
