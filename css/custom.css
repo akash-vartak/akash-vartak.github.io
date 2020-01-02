@@ -32,6 +32,10 @@
 }
 
 @media (min-width: 768px) {
+    .social-icons ul > li {
+        margin-bottom: 1rem;
+    }
+
     .social-icons ul > li > a {
         transition: all 0.25s ease-in-out;
     }
