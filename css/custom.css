@@ -1,47 +1,209 @@
-/* ------- Overlay CSS ------- */
-.overlay {
-    background-image: linear-gradient(130deg, #000000, #232323, #888888, #ffb047);
+/*!
+ * Copyright 2020 Akash Vartak
+ * Licensed under MIT
+ */
+
+
+/* ----- Generic Settings ----- */
+body {
+    font-family: var(--font-Montserrat);
+    color: var(--color-text);
+    background: #ffffff!important;
+    font-size: 1rem;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--font-Montserrat);
+    font-weight: 700;
+    text-transform: none;
+    color: var(--color-subheading);
+}
+
+h1 {
+    font-size: 6rem;
+    line-height: 5.5rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+ul li:before {
+    content: none
+}
+
+strong {
+    font-weight: bold;
 }
 
 
+/* ----- Navbar ----- */
+.navbar p {
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 600;
+}
 
-@media (min-width: 768px) {
-  .masthead .masthead-content {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
+.navbar p .navbar-brand {
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin: 0 0 0 0!important;
 }
 
 
-/* ------- Resume Link CSS ------- */
-.resume-link {
+/* ----- Index ----- */
+.index-section .index-list {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    list-style: none;
+}
+
+.index-item {
+    padding: 0.2rem 0 0.2rem 0;
+}
+
+.index-section .index-list .index-item .index-item-link {
+    font-size: 2rem;
+}
+
+.index-item .index-item-hover-span{
+    display: none;
+    position: absolute;
+    height: 100%;
+    margin: 0 0 0 2px;
+}
+
+.index-item .index-item-hover-span .index-arrow {
+    margin: 0 3px 0 0;
+}
+
+/*.index-item-link:hover ~ .index-item-hover-span {
+    display:inline-block;
+}*/
+
+
+/* ----- Social Icons ----- */
+.social-icons a {
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--color-text);
+    color: #ffffff!important;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin: 0 0 0.2rem 0;
+}
+
+.social-icons a:last-child {
+    margin-right: 0;
+}
+
+.social-icons a:hover, .social-icons a:active, .social-icons a:focus {
+    background-color: var(--color-section-heading);
+    color: #ffffff!important;
+}
+
+
+/* ----- Developer Icons ----- */
+.dev-icons {
+    font-size: 3rem;
+}
+
+.dev-icons .list-inline-item i:hover {
+    color: var(--color-subheading);
+}
+
+
+/* ----- .single-section settings ----- */
+
+.single-section {
+    width: 95vw;
+    padding: 1rem;
+    margin: auto;
+}
+
+.single-section-list {
+    padding: 1rem 0 1rem 1rem;
+}
+
+
+.single-section-list .single-section-item {
+    margin-bottom: 5px;
+}
+
+.single-section-list .single-section-item .title .sub-heading{
+    font-size: 1.07em;
+    color: var(--color-subheading);
+}
+
+/*.single-section-list .single-section-item .description{
+    padding: 0.5rem 1rem;
+}*/
+
+.single-section-list .single-section-item .description .item-bullet-point{
+    color: var(--color-links);
+}
+
+@media only screen and (min-width: 577px) {
+    .single-section-list .single-section-item .description .col-sm-1{
+        max-width: fit-content;
+    }
+}
+
+
+/* ----- .card settings ----- */
+.card {
+    border-radius: .25rem!important;
+    border: 1px solid rgba(0,0,0,0.125)!important;
+}
+
+@media only screen and (min-width: 577px) {
+    .card {
+        margin: 0.5rem;
+        border-radius: .25rem;
+        border: 1px solid rgba(0,0,0,0.125);
+    }
+}
+
+
+/* ----- Other settings ----- */
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.text-primary {
+    color: var(--color-section-heading)!important;
+}
+
+hr.section-divider {
+    border-top: 2px solid var(--color-section-heading);
+    width: 50vw;
+    margin: 1.2rem auto;
+}
+
+hr.sub-section-divider {
+    border-top: 1px solid var(--color-subheading);
+    width: 30vw;
+    margin: 0.8rem auto;
+}
+
+a {
+    color: var(--color-links)!important;
+}
+
+a:active, a:focus, a:hover {
+    color: var(--color-links-hover)!important;
     text-decoration: none;
-    color: #ffa023;
-}
-
-.resume-link:hover {
-    text-decoration: none;
-    color: white;
-}
-
-
-/* ------- Social Link CSS ------- */
-.social-icons ul > li > a {
-    color: #d17700;
-    background-color: #ffffff;
-}
-
-@media (min-width: 768px) {
-    .social-icons ul > li {
-        margin-bottom: 1rem;
-    }
-
-    .social-icons ul > li > a {
-        transition: all 0.25s ease-in-out;
-    }
-    
-    .social-icons ul > li > a:hover {
-        color: #ffffff;
-        background-color: #ffa023;
-    }
 }

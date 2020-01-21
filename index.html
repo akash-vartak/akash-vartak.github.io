@@ -1,106 +1,396 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    
+    <title>Akash Vartak's Home</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Montserrat&display=swap" rel="stylesheet">
+    
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+            crossorigin="anonymous"></script>
+    <script src="vendors/JonoBrandel/jquery.diagonalFade.min.js"></script>
+    <script src="js/custom.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="vendors/handdrawn/handdrawn.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="vendors/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="css/css-variables.css">
+    <link rel="stylesheet" href="css/custom.css">
 
-    <title>Akash Vartak</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-
-    <!-- Custom styles for this template -->
-<!--    <link href="css/coming-soon.min.css" rel="stylesheet">-->
-    <link href="css/coming-soon.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
+    
+    <!-- Custom/Override CSS -->
+    <style>
+    </style>
 </head>
 
-<body>
-
-    <div class="overlay"></div>
+<body id="body-top">
+    <nav id="navbar" class="navbar navbar-light">
+        <p class="text-center"><a class="navbar-brand" href="#body-top">Akash Vartak</a></p>
+    </nav>
     
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-        <source src="mp4/bg.mp4" type="video/mp4">
-    </video>
-
-    <div class="masthead">
-        <div class="/*masthead-bg*/"></div>
+    <div id="index" class="index-section row align-items-center">
+        <div class="col-sm-1"></div>
         
-        <div class="container h-100">
-            <div class="row h-100">
-                <div class="col-12 my-auto">
-                    <div class="masthead-content text-white py-5 py-md-0">
-                        <h1 class="mb-3">
-                            Looks like you've found my page!
-                        </h1>
-                        <h3 class="mb-3">
-                            Hi, I am Akash Vartak and my page is not ready yet :(
-                        </h3>
-                        <br>
-                        
-                        <p class="mb-5">
-                            I'm working hard to finish the development of this site to meet my target launch date of <strong style="color: #ffa023;">January 2020</strong>!
-                            <br><br>
-                            Please be patient and check back after a few days!
-                            <br><br>
-                            Till then, check out my <strong><a class="resume-link" id="resume-link" href="Akash_Vartak_Resume.pdf">Resume</a></strong> and hit me up on any of my social media handles.
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <div class="col-sm-1"></div>
+        
+        <div class="col-sm-8">
+            <ul class="index-list">
+                <li class="index-item text-center">
+                    <a class="index-item-link" href="Akash_Vartak_Resume.pdf">resume</a>
+                    <span class="index-item-hover-span align-text-bottom">
+                        <!--<i class="index-arrow fas fa-arrow-left"></i>-->&nbsp;Download my complete resume here.
+                    </span>
+                </li>
+                <li class="index-item text-center">
+                    <a class="index-item-link" href="#experience">experience</a>
+                    <span class="index-item-hover-span align-text-bottom">
+                        <!--<i class="index-arrow fas fa-arrow-left"></i>-->&nbsp;Places I worked at till today.
+                    </span>
+                </li>
+                <li class="index-item text-center">
+                    <a class="index-item-link" href="#education">education</a>
+                    <span class="index-item-hover-span align-text-bottom">
+                        <!--<i class="index-arrow fas fa-arrow-left"></i>-->&nbsp;Where have I acquired my knowledge?
+                    </span>
+                </li>
+                <li class="index-item text-center">
+                    <a class="index-item-link" href="#skills">skills</a>
+                    <span class="index-item-hover-span align-text-bottom">
+                        <!--<i class="index-arrow fas fa-arrow-left"></i>-->&nbsp;What I have learnt thus far....technology-wise.
+                    </span>
+                </li>
+                <li class="index-item text-center">
+                    <a class="index-item-link" href="#projects">projects</a>
+                    <span class="index-item-hover-span align-text-bottom">
+                        <!--<i class="index-arrow fas fa-arrow-left"></i>-->&nbsp;All my projects and their open source links.
+                    </span>
+                </li>
+                <li class="index-item text-center">
+                    <a class="index-item-link" href="#research-publications">research and publications</a>
+                    <span class="index-item-hover-span align-text-bottom">
+                        <!--<i class="index-arrow fas fa-arrow-left"></i>-->&nbsp;My research interests, published papers and links to it.
+                    </span>
+                </li>
+            </ul>
         </div>
-    </div>
-
-    <div class="social-icons">
-        <ul class="list-unstyled text-center mb-0">
-            <li class="list-unstyled-item">
-                <a href="https://github.com/akash-vartak">
-                    <i class="fab fa-github"></i>
-                </a>
-            </li>
-            
-            <li class="list-unstyled-item">
-                <a href="https://www.instagram.com/akash_vartak/">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </li>
-            
-            <li class="list-unstyled-item">
-                <a href="https://www.facebook.com/akash.vartak.54">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-            </li>
-            
-            <li class="list-unstyled-item">
-                <a href="https://twitter.com/akash_vartak">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </li>
-            
-            <li class="list-unstyled-item">
-                <a href="https://www.linkedin.com/in/akash-vartak-b670a9102/">
+        
+        <div class="col-sm-1">
+            <div class="social-icons text-center">
+                <a href="https://www.linkedin.com/in/akash-vartak-b670a9102/" id="linkedin-social" target="_blank"
+                   data-toggle="tooltip" data-html="true"  data-placement="left" title="Connect with me!">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
+                <a href="https://github.com/akash-vartak" id="github-social" target="_blank"
+                   data-toggle="tooltip" data-html="true"  data-placement="left" title="Check out<br>my projects">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/akash_vartak" id="instagram-social" target="_blank"
+                   data-toggle="tooltip" data-html="true"  data-placement="left" title="Click a picture<br>with me!">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/akash_vartak" id="twitter-social" target="_blank"
+                   data-toggle="tooltip" data-html="true"  data-placement="left" title="Tweet away!">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.facebook.com/akash.vartak.54" id="facebook-social" target="_blank"
+                   data-toggle="tooltip" data-html="true"  data-placement="left" title="Friend me!">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="col-sm-1"></div>
+    </div>
+    
+    <hr class="section-divider">
+    
+    <div id="experience" class="single-section">
+        <h3 class="text-primary">experience</h3>
+        
+        <ul class="single-section-list">
+            <li class="single-section-item">
+                <p class="title">
+                    <strong class="sub-heading">Yardi Software India Private Limited</strong> - Software Analyst
+                    <br><i>Jul 2017 - Jul 2019</i>
+                    <br>
+                    Pune, India
+                </p>
+                <div class="description row align-items-center text-justify">
+                    <div class="col-sm-1 col-1">
+                        <i class="fas fa-angle-double-right item-bullet-point"></i>
+                    </div>
+                    <div class="col-sm-11 text-justify">
+                        Designed and developed a 3-tiered MVC based web application using <strong>Java, Struts2, Hibernate ORM, JSPs, Servlets, Apache Tomcat</strong> and <strong>HTML5, CSS3, JS</strong> among others.
+                    </div>
+
+                    <div class="w-100"></div>
+
+                    <div class="col-sm-1 col-1">
+                        <i class="fas fa-angle-double-right item-bullet-point"></i>
+                    </div>
+                    <div class="col-sm-11">
+                        Mitigated application security issues like SQL Injection, CSRF and Cross-site Scripting.
+                    </div>
+
+                    <div class="w-100"></div>
+
+                    <div class="col-sm-1 col-1">
+                        <i class="fas fa-angle-double-right item-bullet-point"></i>
+                    </div>
+                    <div class="col-sm-11">
+                        Cut down processing times by implementing a scheduling algorithm which allocated invoice-batches for processing by considering load and the number of computing resources available.
+                    </div>
+
+                    <div class="w-100"></div>
+
+                    <div class="col-sm-1 col-1">
+                        <i class="fas fa-angle-double-right item-bullet-point"></i>
+                    </div>
+                    <div class="col-sm-11">
+                        Planned, designed and developed a complete end-to-end chat application with ability to send and receive 10+ filetypes and support for using Non-English characters.
+                    </div>
+                </div>
+            </li>
+            
+            <hr class="sub-section-divider">
+            
+            <li class="single-section-item">
+                <p class="title">
+                    <strong class="sub-heading">E2Open</strong> - Project Intern
+                    <br><i>Jul 2017 - Jul 2019</i>
+                    <br>
+                    Pune, India
+                </p>
+                <div class="description row align-items-center text-justify">
+                    <div class="col-sm-1 col-1">
+                        <i class="fas fa-angle-double-right item-bullet-point"></i>
+                    </div>
+                    <div class="col-sm-11 text-justify">
+                        Developed a price prediction and optimization model, proprietary to E2Open, that proposed the best price of an item for a given store for the next sale cycle, to maximize sales for that item.
+                    </div>
+
+                    <div class="w-100"></div>
+                    
+                    <div class="col-sm-1 col-1">
+                        <i class="fas fa-angle-double-right item-bullet-point"></i>
+                    </div>
+                    <div class="col-sm-11 text-justify">
+                        Worked with a vast repository of store-item combinations and an array of features related to item sales like weather, demographics, survey feedbacks, sale trends and sale seasonality and came up with an ensemble of algorithms.
+                    </div>
+                </div>
+            </li>
+            
+            <hr class="sub-section-divider">
+            
+            <li class="single-section-item">
+                <p class="title">
+                    <strong class="sub-heading">Vevanesca</strong> - Software Engineering Intern
+                    <br><i>Jul 2017 - Jul 2019</i>
+                    <br>
+                    Pune, India
+                </p>
+                <div class="description row align-items-center text-justify">
+                    <div class="col-sm-1 col-1">
+                        <i class="fas fa-angle-double-right item-bullet-point"></i>
+                    </div>
+                    <div class="col-sm-11 text-justify">
+                        Designed and developed the Front-end of the start-up’s Web App, being developed in conjunction with an Android app, using HTML, CSS, AngularJS.
+                    </div>
+                </div>
             </li>
         </ul>
     </div>
+    
+    <hr class="section-divider">
+    
+    <div id="education" class="single-section">
+        <h3 class="text-primary">education</h3>
+        
+        <ul class="single-section-list">
+            <li class="single-section-item">
+                <p class="title">
+                    <strong class="sub-heading">Vevanesca</strong> - Software Engineering Intern
+                    <br><i>Jul 2017 - Jul 2019</i>
+                    <br>
+                    Pune, India
+                </p>
+                <div class="description row align-items-center text-justify">
+                    <div class="col-sm-1 col-1">
+                        <i class="fas fa-angle-double-right item-bullet-point"></i>
+                    </div>
+                    <div class="col-sm-11 text-justify">
+                    </div>
+                </div>
+            </li>
+            
+            <hr class="sub-section-divider">
+            
+            <li class="single-section-item">
+                <p class="title">
+                </p>
+                <p class="lead description">
+                </p>
+            </li>
+        </ul>
+    </div>
+    
+    <hr class="section-divider">
+    
+    <div id="skills" class="single-section">
+        <h3 class="text-primary">skills</h3>
+    </div>
+    
+    <hr class="section-divider">
+    
+    <div id="projects" class="single-section">
+        <h3 class="text-primary">projects</h3>
+        
+        <div class="row card-group">
+                <div class="col-md-4 col-sm-6 col-12 card bg-light">
+                    <div class="card-body">
+                        <h5 class="card-title">Multi-Artist Recommendation System (MARS)</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Oct 2019 – Dec 2019</h6>
+                        
+                        <span class="badge badge-pill badge-dark">Python</span>&nbsp;
+                        <span class="badge badge-pill badge-dark">Data Science</span>&nbsp;
+                        <span class="badge badge-pill badge-dark">matplotlib</span>&nbsp;
+                        <span class="badge badge-pill badge-dark">seaborn</span>&nbsp;
+                        <span class="badge badge-pill badge-dark">Machine Learning</span>&nbsp;
+                        <span class="badge badge-pill badge-dark">scikit-learn</span>&nbsp;
+                        <hr>
+                        <p class="card-text">
+                            A recommendation system to recommend a list of artists to sing a song based on the song lyrics, song genre, mood, and other song and artist meta-data like the number of hits an artist has or the genre of an artist or song tempo using Natural Language Processing and Naïve Bayes and SVMmachine learning models.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 col-12 card text-white bg-dark">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">Price Optimization and Elasticity</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Aug 2016 - Mar 2017</h6>
+                        
+                        <span class="badge badge-pill badge-light">Python</span>&nbsp;
+                        <span class="badge badge-pill badge-light">Data Science</span>&nbsp;
+                        <span class="badge badge-pill badge-light">matplotlib</span>&nbsp;
+                        <span class="badge badge-pill badge-light">seaborn</span>&nbsp;
+                        <span class="badge badge-pill badge-light">Machine Learning</span>&nbsp;
+                        <span class="badge badge-pill badge-light">scikit-learn</span>&nbsp;
+                        <hr>
+                        <p class="card-text">
+                            Prediction of optimal price to maximize item sales using an ensemble of regression models using large historic retail sales of multiple store item combinations to generate analytics and gain insights.
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 col-12 card bg-light">
+                    <div class="card-body">
+                        <h5 class="card-title">APPna Doctor Prescription Viewer</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Jun 2015 - Sept 2015</h6>
+                        
+                        <span class="badge badge-pill badge-dark">Java</span>&nbsp;
+                        <span class="badge badge-pill badge-dark">HTML5</span>&nbsp;
+                        <span class="badge badge-pill badge-dark">CSS3</span>&nbsp;
+                        <span class="badge badge-pill badge-dark">JavaScript</span>&nbsp;
+                        <hr>
+                        <p class="card-text">
+                            A recommendation system to recommend a list of artists to sing a song based on the song lyrics, song genre, mood, and other song and artist meta-data like the number of hits an artist has or the genre of an artist or song tempo using Natural Language Processing and Naïve Bayes and SVMmachine learning models.
+                        </p>
+                    </div>
+                </div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                <div class="w-100"></div>
+                
+                <div class="col-sm-4 col-12 card text-white bg-dark">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">Wordy</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Jan 2016</h6>
+                        
+                        <span class="badge badge-pill badge-light">Python</span>&nbsp;
+                        <span class="badge badge-pill badge-light">Beautiful Soup</span>&nbsp;
+                        <span class="badge badge-pill badge-light">pyttsx</span>&nbsp;
+                        <hr>
+                        <p class="card-text">
+                            A personal vocabulary trainer, made in Python, that displays a word and its meaning as a notification and can also provide pronunciation.Was made only for Linux based systems, specifically for the Ubuntu operating system.
+                        </p>
+                        <br>
+                        <a href="https://github.com/akash-vartak/Wordy" class="card-link">Source Code</a>
+                    </div>
+                </div>
+            
+                <div class="col-sm-4 col-12 card bg-light">
+                    <div class="card-body">
+                        <h5 class="card-title">Simply Unique</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Dec 2015</h6>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/coming-soon.min.js"></script>
+                        <span class="badge badge-pill badge-dark">CSS</span>&nbsp;
+                        <span class="badge badge-pill badge-dark">SCSS</span>&nbsp;
+                        <hr>
+                        <p class="card-text">
+                            A dark theme made for bracket-matching for the Adobe Brackets Editor. Speciality lies in hightened bracket matching and highlighting for better viewing in dark mode, especially for smaller minute brackets like '()'.
+                        </p>
+                        <br>
+                        <a href="https://github.com/akash-vartak/Simply-Unique" class="card-link">Source Code</a>
+                    </div>
+                </div>
+                
+                <div class="col-sm-4 col-12 card text-white bg-dark">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">Rainbow-ish</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Dec 2015</h6>
 
+                        <span class="badge badge-pill badge-light">CSS</span>&nbsp;
+                        <span class="badge badge-pill badge-light">SCSS</span>&nbsp;
+                        <hr>
+                        <p class="card-text">
+                            A dark theme with bright text colors for the Adobe Brackets Editor. It's speciality lies in the crystal clear view it provides with the vibrant VIBGYOR inspired syntax highlighting set against the dark background. Helps provide excellent viewing in light and dark working conditions. Ideal for zen and speed coding.
+                        </p>
+                        <br>
+                        <a href="https://github.com/akash-vartak/Rainbow-ish" class="card-link">Source Code</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+    
+    <hr class="section-divider">
+    
+    <div id="research-publications" class="single-section">
+        <h3 class="text-primary">research and publications</h3>
+    </div>
+    
+    <hr class="section-divider">
+    
+    
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+        
+        $( document ).ready(function() {
+            console.log( "ready!" );
+            
+            $('.index-item-link').each(function (i, value) {
+                $(this).hover(function(){
+                    $(this).closest(".index-item").find(".index-item-hover-span").fadeIn().css('display','inline');
+                }, function(){
+                    $(this).closest(".index-item").find(".index-item-hover-span").fadeOut().css('display','none');
+                });
+            });
+        });
+    </script>
 </body>
-
 </html>

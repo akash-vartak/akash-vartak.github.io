@@ -1,0 +1,37 @@
+:root {
+    --color-section-heading: #ff4545;
+    --color-section-heading-r: 255;
+    --color-section-heading-g: 69;
+    --color-section-heading-b: 69;
+    --color-section-heading-a: 1;
+    --color-subheading: #000000;
+    --color-subheading-r: 0;
+    --color-subheading-g: 0;
+    --color-subheading-b: 0;
+    --color-subheading-a: 1;
+    --color-text: #575757;
+    --color-text-r: 87;
+    --color-text-g: 87;
+    --color-text-b: 87;
+    --color-text-a: 1;
+    --color-links: #f75d5d;
+    --color-links-r: 247;
+    --color-links-g: 93;
+    --color-links-b: 93;
+    --color-links-a: 1;
+    --color-links-hover: #ff2d2d;
+    --color-links-hover-r: 255;
+    --color-links-hover-g: 45;
+    --color-links-hover-b: 45;
+    --color-links-hover-a: 1;
+    --viewport-height: 100vh;
+    --viewport-width: 100vw;
+    --color-linkedin: #0077b5;
+    --color-facebook: #4460ae;
+    --color-twitter: #3cf;
+    --color-gmail: #c21f25;
+    --color-instagram: #cd4378;
+    /*--color-email: #4a7f45;*/
+    --font-Barlow: 'Barlow', sans-serif;
+    --font-Montserrat: 'Montserrat', sans-serif;
+}
