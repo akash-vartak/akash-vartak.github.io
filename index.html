@@ -57,6 +57,12 @@
                     </span>
                 </li>
                 <li class="index-item text-center">
+                    <a class="index-item-link" href="#about">about me</a>
+                    <span class="index-item-hover-span align-text-bottom">
+                        &nbsp;A little about who I am.
+                    </span>
+                </li>
+                <li class="index-item text-center">
                     <a class="index-item-link" href="#experience">experience</a>
                     <span class="index-item-hover-span align-text-bottom">
                         &nbsp;Places I worked at till today.
@@ -68,12 +74,12 @@
                         &nbsp;Where have I acquired my knowledge?
                     </span>
                 </li>
-                <!--<li class="index-item text-center">
+                <li class="index-item text-center">
                     <a class="index-item-link" href="#skills">skills</a>
                     <span class="index-item-hover-span align-text-bottom">
                         &nbsp;What I have learnt thus far....technology-wise.
                     </span>
-                </li>-->
+                </li>
                 <li class="index-item text-center">
                     <a class="index-item-link" href="#projects">projects</a>
                     <span class="index-item-hover-span align-text-bottom">
@@ -90,7 +96,7 @@
         </div>
         
         <div class="col-sm-1">
-            <div class="social-icons text-center">
+            <div class="social-icons text-center" id="social-media">
                 <a href="https://www.linkedin.com/in/akash-vartak-b670a9102/" id="linkedin-social" target="_blank"
                    data-toggle="tooltip" data-html="true"  data-placement="left" title="Connect with me!">
                     <i class="fab fa-linkedin-in"></i>
@@ -115,6 +121,59 @@
         </div>
         
         <div class="col-sm-1"></div>
+    </div>
+    
+    <hr class="section-divider">
+    
+    <div id="about" class="single-section">
+        <h3 class="text-primary">about me</h3>
+        
+        <ul class="single-section-list">
+            <li class="single-section-item">
+                <p class="title text-justify" style="margin: 0.8rem 0;">
+                    <strong class="sub-heading">
+                        As you must have already figured out, my name is Akash Vartak and it's my pleasure to 'meet' you!
+                    </strong>
+                </p>
+                <p class="title text-justify" style="margin: 0.8rem 0;">
+                    <strong class="sub-heading">
+                        Mandatory, blatant, self-advertising:
+                        <br>
+                        I am actively looking for <strong class="text-primary">Internship opportunities in Software Development and/or Machine Learning - Data Science</strong> domains. I have 2-year full-time work experience in full-stack development in Pune, India. To add to my experience, I have also had a Machine Learning Project Internship role.
+                    </strong>
+                </p>
+
+                <p class="title text-justify" style="margin: 0.8rem 0;">
+                    Now that we've got that out of the way, I am pursuing my <strong class="sub-heading">Masters in Computer Science</strong> @ <a class="" href="https://www.umbc.edu/">University Of Maryland - Baltimore County</a> in the <a class="" href="https://www.csee.umbc.edu/">Dept. of Computer Science and Electrical Engineering</a>.
+                    <br>
+                    I received my <strong class="sub-heading">Bachelors in Computer Engineering</strong> from <a class="" href="https://pict.edu/">Pune Institute of Computer Technology</a> of <a class="" href="http://www.unipune.ac.in/">Savitribai Phule Pune University</a> (formerly University of Pune) in 2017.
+                </p>
+
+                <p class="title text-justify" style="margin: 0.8rem 0;">
+                    I work as a <strong class="sub-heading">Graduate Assistant</strong> to <a class="" href="https://coral-lab.umbc.edu/oates/">Prof. Tim Oates</a> for his graduate level Machine Learning course (CMSC 678) and I also work with him in the <a class="" href="https://coral-lab.umbc.edu/">CORAL Lab</a> on <strong class="sub-heading">Grounding Language using Visual Percepts</strong>.
+                </p>
+
+                <p class="title text-justify" style="margin: 0.8rem 0;">
+                    It must be amply clear by now that I am a <strong class="sub-heading">Developer</strong> and that I make stuff for others and myself to use and benefit from. Professionally speaking, I am invested in <strong class="sub-heading">Software/Web Development and Machine Learning - Data Science</strong>. But, my hobby interests lie in a whole bunch of stuff. Name it and I would probably be interested in it and in reading about it and talking about it. From Astronomy to Micro-Biotechnology and everything else under the sun.
+                    <br>
+                    I prefer tabs over spaces and DON'T judge others for choosing otherwise. This is because I am an organization freak. And in that perpetual quest of decent organization, I will always try to maintain some or the other arrangement, even if it ends up being a little tedious to maintain; But this is not to be confused with OCD of any form.
+                    <br>
+                    I love singing and playing Football and Table Tennis. I am always up for trying new cuisines and sweet dishes and desserts and meeting new people.
+                </p>
+
+                <p class="title text-justify" style="margin: 0.8rem 0;">
+                    I am open to collaborate and do a project/paper or work on a freelance paid project you may have. We can also talk about hiring me for Internship or Full-time roles if you are interested.
+                    <br>
+                    We can definitely connect and have a cuppa coffee.
+                    <br>
+                    Just hit me up on any <a class="" href="#social-media">social media</a>! Or, if you prefer email... <a href="mailto:akashvartak.1995@gmail.com" target="_top">akashvartak.1995@gmail.com</a>
+                </p>
+
+                <p class="title text-justify" style="margin: 0.8rem 0;">
+                    But, that's enough of me talking, you can go ahead and dive into my academic and professional details yourself!
+                </p>
+            </li>
+        </ul>
     </div>
     
     <hr class="section-divider">
@@ -194,7 +253,7 @@
                         <i class="fas fa-angle-double-right item-bullet-point"></i>
                     </div>
                     <div class="col-sm-11">
-                        Cut down processing times by implementing a scheduling algorithm which allocated invoice-batches for processing by considering load and the number of computing resources available.
+                        Cut down processing times from weeks to hours by implementing a scheduling algorithm which allocated invoice-batches for processing by considering load and the number of computing resources available.
                     </div>
 
                     <div class="w-100"></div>
@@ -293,17 +352,85 @@
     
     <hr class="section-divider">
     
-    <!--<div id="skills" class="single-section">
+    <div id="skills" class="single-section">
         <h3 class="text-primary">skills</h3>
+        
+        <ul class="single-section-list">
+            <li class="single-section-item">
+                <p class="title">
+                    <strong class="sub-heading">Languages:</strong>
+                </p>
+                <div class="description row align-items-center text-justify">
+                    <div class="col-sm-1 col-1">
+                        <i class="fas fa-angle-double-right item-bullet-point"></i>
+                    </div>
+                    <div class="col-sm-11 text-justify">
+                        <strong>Intermediate:</strong> JAVA, Python, HTML, CSS, JavaScript, PL/SQL, MySQL, XML, JSON, jQuery
+                    </div>
+
+                    <div class="w-100"></div>
+                    
+                    <div class="col-sm-1 col-1">
+                        <i class="fas fa-angle-double-right item-bullet-point"></i>
+                    </div>
+                    <div class="col-sm-11 text-justify">
+                        <strong>Experience With:</strong> C++, AngularJS, PHP
+                    </div>
+                </div>
+            </li>
+            
+            <hr class="sub-section-divider">
+            
+            <li class="single-section-item">
+                <p class="title">
+                    <strong class="sub-heading">Tools and Technologies:</strong>
+                </p>
+                <div class="description row align-items-center text-justify">
+                    <div class="col-sm-1 col-1">
+                        <i class="fas fa-angle-double-right item-bullet-point"></i>
+                    </div>
+                    <div class="col-sm-11 text-justify">
+                        <strong>Libraries:</strong> Struts 2.x, Hibernate ORM, Bootstrap, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn, pyttsx, BeautifulSoup, Selenium(Python)
+                    </div>
+
+                    <div class="w-100"></div>
+                    
+                    <div class="col-sm-1 col-1">
+                        <i class="fas fa-angle-double-right item-bullet-point"></i>
+                    </div>
+                    <div class="col-sm-11 text-justify">
+                        <strong>Tools:</strong> Apache Tomcat, Ant, Servlets, JSP, Git, Jupyter Notebook/Lab, Microsoft Office (Word, Excel, PowerPoint), BeyondCompare, WinSCP, PuTTY
+                    </div>
+
+                    <div class="w-100"></div>
+                    
+                    <div class="col-sm-1 col-1">
+                        <i class="fas fa-angle-double-right item-bullet-point"></i>
+                    </div>
+                    <div class="col-sm-11 text-justify">
+                        <strong>Editors:</strong> Jupyter Notebook, Eclipse, Brackets, BlueJ
+                    </div>
+
+                    <div class="w-100"></div>
+                    
+                    <div class="col-sm-1 col-1">
+                        <i class="fas fa-angle-double-right item-bullet-point"></i>
+                    </div>
+                    <div class="col-sm-11 text-justify">
+                        <strong>Operating Systems:</strong> Windows, Linux - Ubuntu
+                    </div>
+                </div>
+            </li>
+        </ul>
     </div>
     
-    <hr class="section-divider">-->
+    <hr class="section-divider">
     
     <div id="projects" class="single-section">
         <h3 class="text-primary">projects</h3>
         
         <div class="row card-group">
-                <div class="col-md-4 col-sm-6 col-12 card bg-light">
+                <div class="col-md-4 col-sm-6 col-12 card bg-light ">
                     <div class="card-body">
                         <h5 class="card-title">Multi-Artist Recommendation System (MARS)</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Oct 2019 – Dec 2019</h6>
@@ -315,7 +442,7 @@
                         <span class="badge badge-pill badge-dark">Machine Learning</span>&nbsp;
                         <span class="badge badge-pill badge-dark">scikit-learn</span>&nbsp;
                         <hr>
-                        <p class="card-text">
+                        <p class="card-text  text-justify">
                             Created a system to recommend a list of artists to sing a song based on the lyrics, genre, mood, and other song and artist meta-data like the number of hits an artist has or the genre of an artist or tempo using Natural Language Processing and Naïve Bayes and SVM machine learning models.
                         </p>
                     </div>
@@ -333,7 +460,7 @@
                         <span class="badge badge-pill badge-light">Machine Learning</span>&nbsp;
                         <span class="badge badge-pill badge-light">scikit-learn</span>&nbsp;
                         <hr>
-                        <p class="card-text">
+                        <p class="card-text  text-justify">
                             Forecasting of retail sales for multiple store item combinations using past data to provide analytics and insights that help in prediction of optimal price to maximize sales using different regression models.
                         </p>
                     </div>
@@ -349,7 +476,7 @@
                         <span class="badge badge-pill badge-dark">CSS3</span>&nbsp;
                         <span class="badge badge-pill badge-dark">JavaScript</span>&nbsp;
                         <hr>
-                        <p class="card-text">
+                        <p class="card-text  text-justify">
                             A registration portal for doctors and patients. Here the doctor can upload prescriptions, dosages and approve appointments and a patient can schedule appointments, get reminders about a dose, view prescriptions and contact the doctor.
                         </p>
                     </div>
@@ -366,8 +493,8 @@
                         <span class="badge badge-pill badge-light">Beautiful Soup</span>&nbsp;
                         <span class="badge badge-pill badge-light">pyttsx</span>&nbsp;
                         <hr>
-                        <p class="card-text">
-                            A personal vocabulary trainer, made in Python, that displays a word and its meaning as a notification and can also provide pronunciation.
+                        <p class="card-text  text-justify">
+                            A personal vocabulary trainer that displays a word and its meaning as a notification and can also provide pronunciation.
                         </p>
                         <br>
                         <a href="https://github.com/akash-vartak/Wordy" class="card-link">Source Code</a>
@@ -382,8 +509,8 @@
                         <span class="badge badge-pill badge-dark">CSS</span>&nbsp;
                         <span class="badge badge-pill badge-dark">SCSS</span>&nbsp;
                         <hr>
-                        <p class="card-text">
-                            A dark theme made for bracket-matching for the Adobe Brackets Editor. Speciality lies in hightened bracket matching and highlighting for better viewing in dark mode, especially for smaller minute brackets like '()'.
+                        <p class="card-text  text-justify">
+                            A dark theme, for the Adobe Brackets Editor, centered around the idea of matching-bracket-highlighting. Its speciality lies in hightened bracket highlighting for better viewing in dark mode, especially helpful for smaller minute brackets like '()'.
                         </p>
                         <br>
                         <a href="https://github.com/akash-vartak/Simply-Unique" class="card-link">Source Code</a>
@@ -398,8 +525,10 @@
                         <span class="badge badge-pill badge-light">CSS</span>&nbsp;
                         <span class="badge badge-pill badge-light">SCSS</span>&nbsp;
                         <hr>
-                        <p class="card-text">
-                            A dark theme with bright text colors for the Adobe Brackets Editor. It's speciality lies in the crystal clear view it provides with the vibrant VIBGYOR inspired syntax highlighting set against the dark background. Helps provide excellent viewing in light and dark working conditions. Ideal for zen and speed coding.
+                        <p class="card-text  text-justify">
+                            A dark theme with bright text colors, for the Adobe Brackets Editor. Its speciality lies in the crystal clear view it provides with the vibrant VIBGYOR inspired syntax coloring set against the dark background.
+                            <br>
+                            Helps provide excellent viewing in light and dark working conditions. Ideal for zen and speed coding.
                         </p>
                         <br>
                         <a href="https://github.com/akash-vartak/Rainbow-ish" class="card-link">Source Code</a>
