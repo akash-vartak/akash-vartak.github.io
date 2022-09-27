@@ -172,6 +172,21 @@ a:not([href]):not([class]):hover {
   text-decoration: none;
 }
 
+a.black-a {
+  color: black;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a.black-a:hover {
+  text-decoration: underline;
+}
+
+a.black-a:not([href]):not([class]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+
 pre,
 code,
 kbd,
@@ -6362,6 +6377,16 @@ a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
   background-color: #089e86 !important;
+}
+
+.bg-primary-sub {
+  background-color: #a26a36 !important; /*original 0BCEAF, d7a479*/
+}
+
+a.bg-primary-sub:hover, a.bg-primary-sub:focus,
+button.bg-primary-sub:hover,
+button.bg-primary-sub:focus {
+  background-color: #a26a36 !important;
 }
 
 .bg-secondary {
