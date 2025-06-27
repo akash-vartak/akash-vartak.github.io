@@ -16,6 +16,7 @@ $light-cyan-color: color.adjust($cyan-color, $lightness: 25%);
 $green-color: #00ab37 !default;
 $green-color-lime: #b7d12a !default;
 $green-color-dark: #009f06 !default;
+$green-color-darker: #038208 !default;
 $green-color-light: #ddffdd !default;
 $green-color-bright: #11d68b !default;
 $purple-color: #b509ac !default;
@@ -23,6 +24,8 @@ $light-purple-color: color.adjust($purple-color, $lightness: 25%);
 $pink-color: #f92080 !default;
 $pink-color-light: #ffdddd !default;
 $yellow-color: #efcc00 !default;
+$brown-color: #BA5C04FF !default;
+$off-white-color: #fefefe !default;
 
 $grey-color: #828282 !default;
 $grey-color-light: color.adjust($grey-color, $lightness: 40%);
@@ -34,8 +37,11 @@ $black-color: #000000 !default;
 
 // Theme colors
 
-$code-bg-color-light: rgba($purple-color, 0.05);
+$code-bg-color-light: rgba($pink-color-light, 0.35);
 $code-bg-color-dark: #2c3237 !default;
+
+// Font for all text
+//$global-font-family: 'Barlow Condensed' sans-serif;
 
 // Font awesome location
 $fa-font-path: "../webfonts";
