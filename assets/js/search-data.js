@@ -30,7 +30,15 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "news-started-masters-in-computer-science-at-umbc",
+        },{id: "news-a-long-announcement-with-details",
+          title: 'A long announcement with details',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_2/";
+            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
+          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          description: "",
+          section: "News",},{id: "news-started-masters-in-computer-science-at-umbc",
           title: 'Started Masters in Computer Science at UMBC.',
           description: "",
           section: "News",},{id: "news-successfully-defended-masters-thesis",
