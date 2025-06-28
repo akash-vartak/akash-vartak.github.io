@@ -19,11 +19,6 @@ announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: false
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 5 # leave blank to include all the blog posts
 ---
 
 I am pursuing my **PhD in Computer Science** @ [University Of Maryland - Baltimore County](https://www.umbc.edu/) in the [Dept. of Computer Science and Electrical Engineering](https://www.csee.umbc.edu/).
