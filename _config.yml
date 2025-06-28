@@ -101,9 +101,6 @@ collections:
       layout: post
     output: true
     permalink: /:collection/:title/
-  projects:
-    output: true
-    permalink: /:collection/:title/
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -142,7 +139,6 @@ exclude:
   - _pages/about_tim_oates.md
   - _pages/dropdown.md
   - _pages/profiles.md
-  - _pages/projects.md
   - _pages/teaching.md
   - purgecss.config.js
   - README.md
