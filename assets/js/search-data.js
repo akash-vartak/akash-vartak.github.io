@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-repositories",
           title: "repositories",
-          description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
+          description: "my open-source repositories.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
@@ -30,15 +30,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
-          description: "",
-          section: "News",},{id: "news-started-masters-in-computer-science-at-umbc",
+        },{id: "news-started-masters-in-computer-science-at-umbc",
           title: 'Started Masters in Computer Science at UMBC.',
           description: "",
           section: "News",},{id: "news-successfully-defended-masters-thesis",
