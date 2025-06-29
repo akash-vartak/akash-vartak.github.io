@@ -29,3 +29,5 @@ I work as a **Research Assistant** to [Prof. Tim Oates](https://coral-lab.umbc.e
 I am open to internship opportunities as a ML/AI Intern or in a research position.
 I am also open to collaborate on research projects or paper ideas. 
 You can reach me at the email.
+
+Find my CV here <a href="https://drive.google.com/file/d/1PcBXnoYaIu0lgGyCrStk_q_wMo1LgfbN/view?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i></a>
