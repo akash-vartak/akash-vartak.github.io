@@ -1,31 +1,33 @@
 <div class="news">
   {% if site.news != blank %}
     {% assign news_size = site.news | size %}
-    <ul
-      class="news-timeline{% if include.limit and page.announcements.scrollable and news_size > 3 %} scrollable{% endif %}"
+    <div
+      class="news-scroll{% if include.limit and page.announcements.scrollable and news_size > 3 %} scrollable{% endif %}"
     >
-      {% assign news = site.news | reverse %}
-      {% if include.limit and page.announcements.limit %}
-        {% assign news_limit = page.announcements.limit %}
-      {% else %}
-        {% assign news_limit = news_size %}
-      {% endif %}
-      {% for item in news limit: news_limit %}
-        <li>
-          <span class="dot"></span>
-          <div class="news-card">
-            <span class="news-date">{{ item.date | date: '%d %b %Y' }}</span>
-            <span class="news-text">
-              {% if item.inline %}
-                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-              {% else %}
-                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-              {% endif %}
-            </span>
-          </div>
-        </li>
-      {% endfor %}
-    </ul>
+      <ul class="news-timeline">
+        {% assign news = site.news | reverse %}
+        {% if include.limit and page.announcements.limit %}
+          {% assign news_limit = page.announcements.limit %}
+        {% else %}
+          {% assign news_limit = news_size %}
+        {% endif %}
+        {% for item in news limit: news_limit %}
+          <li>
+            <span class="dot"></span>
+            <div class="news-card">
+              <span class="news-date">{{ item.date | date: '%d %b %Y' }}</span>
+              <span class="news-text">
+                {% if item.inline %}
+                  {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                {% else %}
+                  <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                {% endif %}
+              </span>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
   {% else %}
     <p>No news so far...</p>
   {% endif %}
