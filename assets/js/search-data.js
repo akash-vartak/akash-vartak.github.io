@@ -41,6 +41,12 @@ ninja.data = [{
           section: "News",},{id: "news-paper-on-using-gcns-as-meta-classifiers-to-detect-trojaned-dnn-models-accepted-at-international-joint-conference-on-neural-networks-2025",
           title: 'Paper on using GCNs as meta-classifiers to detect trojaned DNN models accepted at...',
           description: "",
+          section: "News",},{id: "news-paper-on-using-an-adaptive-llm-driven-label-free-for-open-vocabulary-object-detection-presented-at-ieee-baltimore-technical-and-professional-development-colloquium-2025",
+          title: 'Paper on using an adaptive LLM-driven label-free for open-vocabulary object detection presented at...',
+          description: "",
+          section: "News",},{id: "news-interning-at-synaptiq-as-a-data-science-and-ai-engineering-intern",
+          title: 'Interning at Synaptiq as a Data Science and AI Engineering Intern.',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
