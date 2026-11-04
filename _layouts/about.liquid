@@ -78,3 +78,7 @@ layout: default
     {% endif %}
   </article>
 </div>
+
+{% if page.profile.image %}
+  <script defer src="{{ '/assets/js/profile-tilt.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>
+{% endif %}

@@ -221,6 +221,16 @@ ul.task-list input[type="checkbox"] {
 
 .profile {
   width: 100%;
+  perspective: 800px;
+
+  picture {
+    display: block;
+    border-radius: 6px;
+    transition:
+      transform 0.15s ease-out,
+      box-shadow 0.15s ease-out;
+    will-change: transform, box-shadow;
+  }
 
   img {
     border-radius: 6px;
@@ -232,7 +242,7 @@ ul.task-list input[type="checkbox"] {
     margin-bottom: 5px;
     margin-top: 5px;
     font-family: monospace;
-    font-size: 0.85rem;
+    font-size: 1rem;
     line-height: 1.9;
     color: var(--global-text-color-light);
     font-weight: 600;
@@ -930,6 +940,9 @@ footer.sticky-bottom {
         > em {
           border-bottom: 1px solid;
           font-style: normal;
+          font-weight: bold;
+          color: color-mix(in oklab, var(--global-theme-color), black 10%);
+          padding: 0 0.3em;
         }
 
         > span.more-authors {
