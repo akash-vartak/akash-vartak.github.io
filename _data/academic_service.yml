@@ -1,0 +1,35 @@
+- name: "ACM Transactions on Computing for Healthcare"
+  abbr: "ACM HEALTH"
+  years: "2024"
+
+- name: "Association for the Advancement of Artificial Intelligence"
+  abbr: "AAAI"
+  years: "2024, 2025, 2026, 2027"
+
+- name: "Conference on Neural Information Processing Systems"
+  abbr: "NeurIPS"
+  years: "2023"
+
+- name: "International Conference on Data Mining"
+  abbr: "ICDM"
+  years: "2022, 2023"
+
+- name: "International Conference on Learning Representations"
+  abbr: "ICLR"
+  years: "2025"
+
+- name: "International Joint Conference on Neural Networks"
+  abbr: "IJCNN"
+  years: "2025"
+
+- name: "International Conference on Acoustics, Speech, and Signal Processing"
+  abbr: "ICASSP"
+  years: "2027"
+
+- name: "Workshop on Data in Generative Models (The Bad, the Ugly, and the Greats) at International Conference on Machine Learning"
+  abbr: "ICML Workshop"
+  years: "2025"
+
+- name: "Workshop on Knowledge-Infused Learning (KiL) at ACM International Conference on Knowledge Discovery and Data Mining"
+  abbr: "KDD Workshop"
+  years: "2024"

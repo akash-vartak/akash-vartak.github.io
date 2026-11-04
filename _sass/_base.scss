@@ -546,6 +546,50 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// Academic service
+
+.service-list {
+  display: grid;
+  grid-template-columns: 1fr 140px;
+  column-gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: contents;
+  }
+
+  .service-entry,
+  .service-years {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+
+  li:last-child .service-entry,
+  li:last-child .service-years {
+    border-bottom: none;
+  }
+
+  .service-entry {
+    min-width: 0;
+    font-size: 1rem;
+  }
+
+  .service-abbr {
+    color: var(--global-theme-color);
+    font-weight: 600;
+  }
+
+  .service-years {
+    min-width: 0;
+    font-family: "Barlow", system-ui, sans-serif;
+    font-size: 0.9rem;
+    color: var(--global-text-color-light);
+    text-align: right;
+  }
+}
+
 // Social (bottom)
 
 .social {
