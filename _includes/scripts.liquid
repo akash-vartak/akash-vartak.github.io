@@ -323,3 +323,8 @@
 {% if site.newsletter.enabled %}
   <script defer src="{{ '/assets/js/newsletter.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}
+
+{% if site.glyph_background %}
+  <!-- Glyph background -->
+  <script defer src="{{ '/assets/js/glyph-background.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>
+{% endif %}

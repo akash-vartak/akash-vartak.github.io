@@ -312,7 +312,7 @@ ul.task-list input[type="checkbox"] {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
-  opacity: 0.95;
+  opacity: 1;
 }
 
 .navbar .dropdown-menu {
@@ -601,11 +601,12 @@ ul.task-list input[type="checkbox"] {
 
 .social {
   text-align: center;
+  margin-top: 2rem;
 
   .contact-icons {
     display: flex;
     justify-content: center;
-    gap: 22px;
+    gap: 1rem;
     font-size: 1rem;
 
     a {
@@ -1011,7 +1012,8 @@ footer.sticky-bottom {
       .links {
         a.btn {
           color: var(--global-text-color);
-          border: 1px solid var(--global-text-color);
+          background-color: var(--global-bg-color);
+          border: 1px solid var(--global-divider-color);
           padding-left: 1rem;
           padding-right: 1rem;
           padding-top: 0.25rem;
@@ -1024,6 +1026,8 @@ footer.sticky-bottom {
           }
         }
         a.award.btn {
+          background-color: var(--global-bg-color);
+          color: var(--global-highlight-color);
           border-color: var(--global-highlight-color);
         }
       }

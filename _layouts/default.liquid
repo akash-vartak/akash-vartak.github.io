@@ -17,6 +17,10 @@
 
   <!-- Body -->
   <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+    {% if site.glyph_background %}
+      <canvas id="glyph-background" aria-hidden="true"></canvas>
+    {% endif %}
+
     <!-- Header -->
     {% include header.liquid %}
 
