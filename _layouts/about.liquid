@@ -64,6 +64,12 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
+    <!-- Talks and awards -->
+    {% if page.talks_and_awards %}
+      <h2 class="section-heading">talks and awards</h2>
+      {% include talks_and_awards.liquid %}
+    {% endif %}
+
     <!-- Academic service -->
     {% if page.academic_service %}
       <h2 class="section-heading">academic service</h2>

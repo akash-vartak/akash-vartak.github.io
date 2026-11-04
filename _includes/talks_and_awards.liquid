@@ -1,0 +1,13 @@
+<ul class="service-list">
+  {% for item in site.data.talks_and_awards %}
+    <li>
+      <span class="service-entry">
+        <span class="service-abbr">{{ item.type }}</span> - {{ item.title }}
+        {% if item.description %}
+          <span class="service-desc">{{ item.description }}</span>
+        {% endif %}
+      </span>
+      <span class="service-years">{{ item.date }}</span>
+    </li>
+  {% endfor %}
+</ul>

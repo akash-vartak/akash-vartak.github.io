@@ -13,6 +13,7 @@ profile:
     <p>Looking for: Internships</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
+talks_and_awards: true # includes a list of talks, posters, and awards
 academic_service: true # includes a list of program committee / reviewer roles
 social: true # includes social icons at the bottom of the page
 

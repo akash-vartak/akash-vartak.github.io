@@ -546,7 +546,7 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-// Academic service
+// Talks, awards, and academic service
 
 .service-list {
   display: grid;
@@ -581,11 +581,18 @@ ul.task-list input[type="checkbox"] {
     font-weight: 600;
   }
 
+  .service-desc {
+    display: block;
+    margin-top: 2px;
+    font-size: 0.9rem;
+    color: var(--global-text-color);
+  }
+
   .service-years {
     min-width: 0;
     font-family: "Barlow", system-ui, sans-serif;
     font-size: 0.9rem;
-    color: var(--global-text-color-light);
+    color: var(--global-text-color);
     text-align: right;
   }
 }

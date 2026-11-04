@@ -1,0 +1,14 @@
+- type: "Poster"
+  title: "Detecting Backdoors Using Graph Convolution Networks"
+  description: "Poster presentation to members of NASA EDT, at UMBC."
+  date: "October 2024"
+
+- type: "Invited Talk"
+  title: "Detecting Trojaned Models using GCNs"
+  description: "Presented a deep dive of my research about using GCNs as a meta-classifiers for trojan detection at University of California San Diego to members of UCSD, IARPA and NIST."
+  date: "August 2024"
+
+- type: "Best Poster Award"
+  title: "Backdoor Detection using Graph Convolutional Networks"
+  description: "Best Poster Award at CSEE Research Day 2024."
+  date: "May 2024"
