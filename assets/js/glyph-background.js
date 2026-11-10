@@ -1,5 +1,5 @@
 (function () {
-  var CHARACTERS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  var CHARACTERS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789`~!@#$%^&*()_+[]{}\|,./<>?;:'\"-_=+";
   var MAX_WAVES = 12;
   var TRAIL = 12;
   var TRAIL_LIFE = 700;
@@ -11,6 +11,8 @@
   var WAVE_TAIL = 30;
   var DRIFT = [-30, 12];
   var ACTIVITY_DECAY = 900;
+  var GLOW_DARKEN = 0.25; // ambient glyph color, darkened % off --global-text-color-light
+  var ACCENT_WHITEN = 0.75; // click-wave color, blended % toward white off --global-theme-color
 
   var VERTEX = [
     "attribute vec2 position;",
@@ -138,6 +140,18 @@
     probe.fillRect(0, 0, 1, 1);
     var data = probe.getImageData(0, 0, 1, 1).data;
     return [data[0] / 255, data[1] / 255, data[2] / 255];
+  }
+
+  function darken(rgb, amount) {
+    return [rgb[0] * (1 - amount), rgb[1] * (1 - amount), rgb[2] * (1 - amount)];
+  }
+
+  function tintWhite(rgb, amount) {
+    return [
+      rgb[0] + (1 - rgb[0]) * amount,
+      rgb[1] + (1 - rgb[1]) * amount,
+      rgb[2] + (1 - rgb[2]) * amount,
+    ];
   }
 
   function drawAtlas(cellWidth, cellHeight, font) {
@@ -288,8 +302,8 @@
         var key = glow + "|" + shape;
         if (key !== colorKey) {
           colorKey = key;
-          color = toRgb(glow);
-          accent = toRgb(shape);
+          color = darken(toRgb(glow), GLOW_DARKEN);
+          accent = tintWhite(toRgb(shape), ACCENT_WHITEN);
         }
       }
 
